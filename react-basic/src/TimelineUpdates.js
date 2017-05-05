@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PictureUpdates from './PictureUpdates'
 import ProjectUpdates from './ProjectUpdates'
 import BlogUpdates from './BlogUpdates'
-import pictureData from './picture-data.json'
 import './App.css';
 
 class TimelineUpdates extends Component {
@@ -15,9 +14,7 @@ class TimelineUpdates extends Component {
   render() {
     return (
       <div className="Timelines">
-        <PictureUpdates
-          data={pictureData}
-        />
+        <PictureUpdates />
         <ProjectUpdates />
         <BlogUpdates />
       </div>
