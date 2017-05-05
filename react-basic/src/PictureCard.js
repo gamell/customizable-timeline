@@ -8,9 +8,9 @@ const getDesc = props => `Image of ${props.name}`;
 function PictureCard(props) {
   const data = props.data;
   return (
-    <li className="photo-card">
-      <h2><a href={getLink(data)}>{data.name}</a></h2>
-      <a href={getLink(data)}>
+    <li className="card picture-card">
+      <a href={getLink(data)} className="card-content">
+        <h3>{data.name}</h3>
         <img src={data.image_url} alt={getDesc(data)} />
       </a>
     </li>

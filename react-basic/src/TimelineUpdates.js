@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 import PictureUpdates from './PictureUpdates'
 import ProjectUpdates from './ProjectUpdates'
 import BlogUpdates from './BlogUpdates'
-import './App.css';
 
 class TimelineUpdates extends Component {
   constructor() {
     super();
     this.state = {
-      //pictureData
+
     };
   }
   render() {
     return (
-      <div className="Timelines">
+      <div>
         <PictureUpdates />
         <ProjectUpdates />
         <BlogUpdates />
